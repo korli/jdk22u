@@ -112,6 +112,7 @@ final class ProcessImpl extends Process {
                     if (lm != LaunchMechanism.POSIX_SPAWN) {
                         return lm; // POSIX_SPAWN isn't supported on HAIKU
                     }
+                    break;
                 case LINUX:
                 case AIX:
                 case MACOS:
